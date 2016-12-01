@@ -1,0 +1,13 @@
+// sass/_mixins.scss
+
+@mixin media-min-max($min-px, $max-px){
+    @media all and (min-width : $min-px) and (max-width : $max-px){
+        @content;
+    }
+}
+
+@mixin media-min($min-px){
+    @media all and (min-width : $min-px){
+        @content;
+    }
+}
